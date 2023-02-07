@@ -8,11 +8,11 @@ body {
 }
 
 .light-theme {
-	background: url(/image/фон.jpg);
+	background: url(/image/фон.jpg) no-repeat;
 }
 
 .dark-theme {
-	background: url(/image/темная\ тема.png);
+	background: url(/image/темная\ тема.png) no-repeat;
 }
 
 .overlay {
