@@ -5,14 +5,20 @@
 
 body {
 	margin: 0px;
+	position: relative;
+	padding-top: 30px;
+	width: 100vw;
+	height: 100vh;
 }
 
 .light-theme {
 	background: url(/image/фон.jpg) no-repeat;
+	background-size: cover;
 }
 
 .dark-theme {
 	background: url(/image/темная\ тема.png) no-repeat;
+	background-size: cover;
 }
 
 .overlay {
@@ -27,8 +33,9 @@ body {
 
 section {
 	width: 1280px;
-	margin: 20px auto;
 	display: flex;
+	margin-left: auto;
+	margin-right: auto;
 	flex-direction: column;
 	position: relative;
 	z-index: 1;
