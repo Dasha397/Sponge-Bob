@@ -7,8 +7,8 @@ body {
 	margin: 0px;
 	position: relative;
 	padding-top: 30px;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	/* height: 100%; */
 }
 
 .light-theme {
@@ -22,17 +22,17 @@ body {
 }
 
 .overlay {
-	width: 100%;
-	height: 100%;
 	background: #95909047;
 	position: absolute;
 	left: 0;
+	right: 0;
 	top: 0;
+	bottom: 0;
 	z-index: 0;
 }
 
 section {
-	width: 1280px;
+	max-width: 1280px;
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
@@ -68,7 +68,13 @@ section {
 
 .button {
 	display: flex;
-	justify-content: center;
+	justify-content: center;	
+}
+
+@media screen and (max-width: 925px) {
+	.button {
+		flex-direction: column;
+	}
 }
 
 .btn-first {
